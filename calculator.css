@@ -1,0 +1,44 @@
+body{
+    background: linear-gradient(to right, #f3f36d, #f3f364);
+}
+.container-grid{
+    align-content: center;
+    justify-content: center;
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: minmax(100px, auto) repeat(5,100px);
+}
+.container-grid > button{
+    color: rgb(16, 17, 17);
+    cursor: pointer;
+    border: 1px solid rgb(215, 8, 8);
+    outline: none;
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, .60);
+}
+.container-grid > button:hover{
+    background-color: rgba(255, 255, 255, .90);
+}
+#span{
+    grid-column: span 2 ;
+}
+.output{
+    grid-column: 1 /-1;
+    background-color:rgba(0, 0, 0,.75); 
+    display: flex;
+    align-items: flex-end;
+    justify-content:space-around;
+    flex-direction: column;
+    padding: 15px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.output .previous-oparand{
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+}
+.output .current-oparand{
+    color: white;
+    font-size: 2.5rem;
+}
