@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="./calculator.css">
+    <script src="./calculator.js" defer></script>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body class="container-fluid">
+    <div class="container-grid">
+      <div class="output">
+        <div data-previous-oparand class="previous-oparand"></div>
+        <div data-current-oparand class="current-oparand"></div>
+      </div>
+      <button data-ac id="span" class="btn btn-ac">AC</button>
+      <button data-delete class="btn btn-del">DEL</button>
+      <button class="btn btn-div" data-operation >÷</button>
+      <button data-numbers class="btn btn-1">1</button>
+      <button data-numbers class="btn btn-2">2</button>
+      <button class="btn btn-3" data-numbers >3</button>
+      <button data-operation class="btn btn-mult">×</button>
+      <button class="btn btn-4" data-numbers >4</button>
+      <button data-numbers class="btn btn-5">5</button>
+      <button data-numbers class="btn btn-6">6</button>
+      <button data-operation class="btn btn-plu">+</button>
+      <button data-numbers class="btn btn-7">7</button>
+      <button data-numbers class="btn btn-8">8</button>
+      <button data-numbers class="btn btn-9">9</button>
+      <button data-operation class="btn btn-minu">-</button>
+      <button data-numbers class="btn btn-dot">.</button>
+      <button data-numbers class="btn btn-0">0</button>
+      <button id="span" data-equal class="btn btn-ac">=</button>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
